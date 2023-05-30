@@ -5,11 +5,9 @@ var router = express.Router();
 
 const { Otphandler } = require('../controllers/usercontroller');
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+router.post('/', Otphandler)
 
-// router.post('/send-verification-code',Otphandler)
+
 
 
 
